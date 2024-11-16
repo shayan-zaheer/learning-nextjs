@@ -6,6 +6,7 @@ import React from "react";
 function Home() {
     const router = useRouter();
 
+
     const route = (path) => {
         router.push(path);
     };
