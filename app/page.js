@@ -2,19 +2,15 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation"; // from next/navigation
 import React from "react";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({subsets: ["latin"], weight: "500"});
 
 function Home() {
-    const router = useRouter();
-
-
-    const route = (path) => {
-        router.push(path);
-    };
-
     return (
         <section>
             <h1>useRouter</h1>
-            <div className="flex p-6 gap-6">
+            <div className={`flex p-6 gap-6 ${roboto.className}`}>
                 <button className="border px-2 py-4">
                     <Link href="/projects">Go to Projects Page</Link>
                 </button>

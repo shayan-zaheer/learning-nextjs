@@ -7,4 +7,4 @@ export default function User({ params }) {
   return (
     <div>{user.user}</div>
   );
-}
+} 
